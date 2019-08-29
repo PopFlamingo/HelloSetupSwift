@@ -1,0 +1,17 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - uses: adtrevor/setup-swift@master
+      with:
+        swift-version: '5.0.2'
+    - name: Build package
+      run: swift build
+    - name: Test package
+      run: swift test
