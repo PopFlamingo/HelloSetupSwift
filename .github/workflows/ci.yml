@@ -11,8 +11,6 @@ jobs:
     - uses: adtrevor/setup-swift@master
       with:
         swift-version: '5.0.2'
-    - name: Show version
-      run: swift --version
     - name: Build package
       run: swift build
     - name: Test package
