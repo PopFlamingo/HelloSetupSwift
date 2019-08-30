@@ -8,7 +8,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - uses: adtrevor/setup-swift@master
+    - uses: adtrevor/setup-swift@v0.1-alpha
       with:
         swift-version: '5.0.2'
     - name: Build package
