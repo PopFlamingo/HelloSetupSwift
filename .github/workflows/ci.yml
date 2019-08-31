@@ -1,7 +1,7 @@
 name: CI
 
 on: [push, pull_request]
-  if: github.actor == 'foo'
+  if: success()
 
 jobs:
   build:
