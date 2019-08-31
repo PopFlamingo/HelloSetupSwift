@@ -3,6 +3,7 @@
 
 import PackageDescription
 
+// The configuration of the package.
 let package = Package(
     name: "HelloSetupSwift",
     products: [
