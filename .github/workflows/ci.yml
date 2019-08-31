@@ -3,7 +3,6 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  if: success()
   build:
     runs-on: ubuntu-latest
     
@@ -12,6 +11,7 @@ jobs:
     - uses: adtrevor/setup-swift@v0.1-alpha
       with:
         swift-version: '5.0.2'
+          if: success()
     - name: Build package
       run: swift build
     - name: Test package
