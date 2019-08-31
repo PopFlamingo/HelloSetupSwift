@@ -11,7 +11,7 @@ jobs:
     - uses: adtrevor/setup-swift@v0.1-alpha
       with:
         swift-version: '5.0.2'
-          if: success()
+        if: success()
     - name: Build package
       run: swift build
     - name: Test package
